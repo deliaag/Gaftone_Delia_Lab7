@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gaftone_Delia_Lab7.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="cats.jpg"
+                SemanticProperties.Description="My Happy List"
+                HeightRequest="300" />
+            <Label FontSize="22" FontAttributes="Bold" Text=" COPING WITH NEGATIVE EMOTIONS " VerticalOptions="End" />
+            <Label FontSize="9" Text=" Little things that make you happier "  TextColor="OrangeRed" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label  FontSize="22"  FontAttributes="Bold" Text="This app will help you to cure sadness :)  " TextColor="OrangeRed"/>
+
+    </VerticalStackLayout>
+</ContentPage>
