@@ -5,13 +5,12 @@
              Title="AboutPage">
     <VerticalStackLayout Spacing="10" Margin="10">
         <HorizontalStackLayout Spacing="10">
-            <Image Source="cats.jpg"
-                SemanticProperties.Description="My Happy List"
-                HeightRequest="300" />
-            <Label FontSize="22" FontAttributes="Bold" Text=" COPING WITH NEGATIVE EMOTIONS " VerticalOptions="End" />
-            <Label FontSize="9" Text=" Little things that make you happier "  TextColor="OrangeRed" VerticalOptions="End" />
+            <Image Source="shop_list.jpg"
+                   SemanticProperties.Description="My Shopping List"
+                   HeightRequest="64"/>
+            <Label FontSize="22" FontAttributes="Bold" Text="My Shopping List" VerticalOptions="End"/>
+            <Label FontSize="22" Text="v1.0" VerticalOptions="End"/>
         </HorizontalStackLayout>
-        <Label  FontSize="22"  FontAttributes="Bold" Text="This app will help you to cure sadness :)  " TextColor="OrangeRed"/>
-
+        <Label Text="This app will help you to manage your shopping list" />
     </VerticalStackLayout>
 </ContentPage>
