@@ -44,6 +44,7 @@ namespace Gaftone_Delia_Lab7.Data
         {
             return _database.DeleteAsync(slist);
         }
+
         public Task<int> SaveProductAsync(Product product)
         {
             if (product.ID != 0)

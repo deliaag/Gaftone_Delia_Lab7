@@ -9,6 +9,7 @@ public partial class ProductPage : ContentPage
     {
         InitializeComponent();
         sl = slist;
+
     }
 
     async void OnSaveButtonClicked(object sender, EventArgs e)
@@ -27,6 +28,18 @@ public partial class ProductPage : ContentPage
     {
         base.OnAppearing();
         listView.ItemsSource = await App.Database.GetProductsAsync();
+    }
+
+
+
+    async void OnChooseButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ProductPage((ShopList)
+       this.BindingContext)
+        {
+            BindingContext = new Product()
+        });
+
     }
 
     async void OnAddButtonClicked(object sender, EventArgs e)
